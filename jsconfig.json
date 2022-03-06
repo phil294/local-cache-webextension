@@ -1,0 +1,32 @@
+{
+  "exclude": [
+    "node_modules",
+    "dist",
+    "dists",
+    "todo*",
+    ".vscode",
+    "docs"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext", "dom"
+    ],
+    "module": "ESNext",
+    "target": "ESNext",
+    "checkJs": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true, 
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  }
+}

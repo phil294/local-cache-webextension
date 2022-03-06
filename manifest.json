@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "Local Cache",
+	"version": "0.1",
+	"description": "Caches all visited sites as text to a local storage for offline usage. When you navigate to any previously visited page that now returns an error (e.g. 404, or your network is offline), a new tab will open with the previous cached version. THE CACHE IS NEVER CLEARED, so the archive CAN GET LARGE if you browse around a lot. But as it's text only and per unique url max. 25 kB, it should not be too bad. PLANNED FOR THE FUTURE: Configurable clearing strategy, blacklist sites or errors, configurable saving format besides text, export function, compression, full text search (the latter is hard to do with web extension, so probably never). None of that exists yet however. To purge the cache, you need to dig into your local browser extension folder.",
+	"homepage_url": "https://github.com/phil294/local-cache-webextension",
+	"icons": {
+		"48": "icons/icon-48.png"
+	},
+	"background": {
+		"scripts": [
+			"google-stinks/browser-polyfill.min.js",
+			"main.js"
+		]
+	},
+	"permissions": [
+		"webRequest",
+		"tabs",
+		"storage",
+		"unlimitedStorage",
+		"<all_urls>"
+	]
+}

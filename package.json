@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "webextension-polyfill": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/webextension-polyfill": "^0.8.2",
+    "coffeescript": "^2.6.1",
+    "typescript": "^4.6.2"
+  }
+}
