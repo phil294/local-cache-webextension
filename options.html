@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <p>Local Cache Extension: Preferences</p>
+    <form>
+        <fieldset>
+            <legend>Open cache when</legend>
+            <p>When you select "on error" (the default), the potentially cached version will be shown on network error, 404 etc. When you select "before request", for <em>every</em> new tab, a cached version will be shown in a separate tab, if available, and closed again as soon as the original tab loaded successfully. The retrieval and caching process is unaffected by this option.</p>
+            <label>Open cache when
+                <select name="open_cache_when" id="open_cache_when">
+                    <option value="on_error">on error</option>
+                    <option value="before_request">before request</option>
+                </select>
+            </label>
+            <button type="submit">Save</button>
+        </fieldset>>
+    </form>
+
+    <script src="./google-stinks/browser-polyfill.min.js"></script>
+    <script src="./background-utils.js"></script>
+    <script src="./options.js"></script>
+
+  </body>
+
+</html>
