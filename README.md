@@ -19,3 +19,13 @@ Source hosted on [GitHub](https://github.com/phil294/local-cache-webextension)
 ## Alternatives
 
 - [Falcon](https://github.com/lengstrom/falcon). Falcon is awesome and somewhat popular on Chrome. There is a Firefox fork too. Notable differences to Local Cache: [Supports full text search](https://github.com/lengstrom/falcon/issues/78#issuecomment-1069166388), but does not offer opening the cached version: If the site is not available for whatever reason, the extension does not help you afaik (although it *could*). Also does not understand HTTP codes, so if a site turns into 404 one day, the old cached content is gone
+
+## Changelog
+
+### 0.2
+#### 17.03.2022
+- Add option page; add optional new option *`Open cache when`*: `on_error` (default, previous behavior) vs. `before_request`. With  `before request`, for <em>every</em> new tab, a cached version will be shown in a separate tab, if available, and closed again as soon as the original tab loaded successfully. The retrieval and caching process is unaffected by this option.
+
+### 0.1
+#### 06.03.2022
+- Release
