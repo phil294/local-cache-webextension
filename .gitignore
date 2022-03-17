@@ -2,5 +2,5 @@
 node_modules
 *.js
 google-stinks
-dist
+dist*
 todo*
